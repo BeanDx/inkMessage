@@ -68,12 +68,16 @@ const SingUpForm = () => {
   return (
     <Form {...form}>
       <div className="sm:w-420 flex-center flex-col">
-        <img src="/assets/images/logo" alt="logo" />
 
-        <h2 className="h3-bold md:h2-bold pt-5 sm:pt-12">Create a new account</h2>
+        {/*To DO!*/}
+        <div className="flex items-end"> 
+          <img src="/assets/icons/logo.svg" height={64} width={64} alt="logo" />
+          <span className="h3-bold md:h2-bold pt-0 sm:pt-0 text-orange-2">Ink</span>
+        </div>
+        <h2 className="h3-bold md:h2-bold pt-0 sm:pt-0">Create a new account</h2>
         <p
-          className="text-light-3 small-medium md:base-regular mt-2">
-          To use <span className="text-primary-500">Ink</span>, please enter your accout enter your details
+          className="text-orange-2 small-medium md:base-regular mt-2">
+          To use <span className="text-orange-1">Ink</span>, please enter your accout enter your details
         </p>
 
 
@@ -140,7 +144,7 @@ const SingUpForm = () => {
 
           <p className="text-small-regular text-light-2 text-center mt-2">
             Already have an account?
-            <Link to='/sign-in' className="text-primary-500 text-small-semibold ml-1">Sign in</Link>
+            <Link to='/sign-in' className="text-orange-2 text-small-semibold ml-1">Sign in</Link>
           </p>
         </form>
       </div>

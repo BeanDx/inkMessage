@@ -33,6 +33,8 @@ module.exports = {
         'light-2': '#EFEFEF',
         'light-3': '#7878A3',
         'light-4': '#5C5C7B',
+        'orange-1': '#fc8638',
+        'orange-2': '#b5591b',
       },
       screens: {
         'xs': '480px',
