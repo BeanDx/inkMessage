@@ -57,11 +57,15 @@ const SingInForm = () => {
   return (
     <Form {...form}>
       <div className="sm:w-420 flex-center flex-col">
-        <img src="/assets/images/logo" alt="logo" />
 
-        <h2 className="h3-bold md:h2-bold pt-5 sm:pt-12">Sign in to your account</h2>
+        <div className="flex items-end">
+          <img src="/assets/icons/logo.svg" height={64} width={64} alt="logo" />
+          <span className="h3-bold md:h2-bold pt-0 sm:pt-0 text-orange-2">Ink</span>
+        </div>
+
+        <h2 className="h3-bold md:h2-bold pt-0 sm:pt-0">Sign in to your account</h2>
         <p
-          className="text-light-3 small-medium md:base-regular mt-2">
+          className="text-orange-1 small-medium md:base-regular mt-2">
           Welcome back! Please, enter your details
         </p>
 
@@ -103,7 +107,7 @@ const SingInForm = () => {
 
           <p className="text-small-regular text-light-2 text-center mt-2">
             Don't have an account?
-            <Link to='/sign-up' className="text-primary-500 text-small-semibold ml-1">Sign up</Link>
+            <Link to='/sign-up' className="text-orange-2 text-small-semibold ml-1">Sign up</Link>
           </p>
         </form>
       </div>
